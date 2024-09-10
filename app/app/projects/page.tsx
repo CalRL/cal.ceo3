@@ -33,7 +33,9 @@ function HubblyProject() {
             alt="Hubbly logo"
           />
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2 text-center">Hubbly</div>
+            <div className="text-white font-bold text-xl mb-2 text-center">
+              Hubbly
+            </div>
             <p className="text-gray-400 text-base text-center">
               All in one minecraft hub software. Extremely customizable, easy to
               use, and feature rich.
@@ -56,7 +58,7 @@ function JACRProject() {
             alt="Github logo"
           />
           <div className="px-6 py-4">
-            <div className="font-bold text-xl mb-2 text-center">
+            <div className="text-white font-bold text-xl mb-2 text-center">
               Just Another Chat Room
             </div>
             <p className="text-gray-400 text-base text-center">
@@ -83,7 +85,7 @@ function PlaytimeChat() {
             alt="Velocity logo"
           />
           <div className="px-4 py-4">
-            <div className="font-bold text-xl mb-2 text-center text-nowrap">
+            <div className="text-white font-bold text-xl mb-2 text-center text-nowrap">
               VelocityOnlineTime / PlaytimeChat
             </div>
             <p className="text-gray-400 text-base text-center">

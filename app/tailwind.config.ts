@@ -13,6 +13,15 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        blur: {
+          "0%": { filter: "blur(5px)" },
+          "100%": { filter: "blur(0px)" },
+        },
+      },
+      animation: {
+        blur: "blur 0.5s linear",
+      },
     },
   },
   plugins: [],
