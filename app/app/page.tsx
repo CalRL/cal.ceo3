@@ -16,11 +16,11 @@ export default async function Home() {
   }
 
   return (
-    <div>
+    <div className="h-full">
       <Navbar />
       <main className="flex mt-[20vh] flex-col items-center justify-between">
         {/* Pass discordStatus to MainComponent */}
-        <MainComponent discordStatus={discordStatus} />
+        <MainComponent />
       </main>
     </div>
   );

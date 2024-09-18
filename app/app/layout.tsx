@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} duration-75 animate-blur`}>
+      <body className={`${inter.className} animate-blur h-full`}>
         {children}
       </body>
     </html>

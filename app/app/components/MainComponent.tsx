@@ -3,17 +3,36 @@ import * as React from "react";
 import "../App.css";
 import { Grid, GridItem } from "@chakra-ui/react";
 import { FaCircle } from "react-icons/fa";
+import { json } from "stream/consumers";
 const url = "https://api.lanyard.rest/v1/users/242276511028084738";
 
-type Props = {
-  discordStatus: string;
-};
+export const MainComponent: React.FC = () => {
+  const [discordStatus, setDiscordStatus] = React.useState("offline");
 
-export const MainComponent: React.FC<Props> = ({ discordStatus }) => {
+  // Client-side fetch on component mount and periodically
+  React.useEffect(() => {
+    const fetchDiscordStatus = async () => {
+      try {
+        const response = await fetch(url, {
+          headers: {
+            "Cache-Control": "no-cache", // Prevent caching
+          },
+        });
+        const data = await response.json();
+        setDiscordStatus(data.data.discord_status || "offline");
+      } catch (error) {
+        console.error("Error fetching Discord information", error);
+        setDiscordStatus("offline"); // Fallback to offline in case of error
+      }
+    };
+
+    fetchDiscordStatus();
+  }, []); // Empty dependency array ensures this runs once on mount
+
   const color = getColor(discordStatus);
   return (
-    <div className="main flex-nowrap">
-      <div className="mt-[5%] w-[576px] h-full">
+    <div className="main flex-nowrap mx-auto max-w-sm sm:max-w-2xl lg:max-w-4xl">
+      <div className="mt-[5%] h-full">
         <div className="">
           <Grid
             templateAreas={`"avatar name pronouns"
@@ -30,11 +49,13 @@ export const MainComponent: React.FC<Props> = ({ discordStatus }) => {
               marginRight="10%"
             >
               <img
-                className="rounded-full border-4 avatar-border avatar"
+                className={`rounded-full border-4 avatar
+                  border-slate-600`}
                 width="96px"
                 height="96px"
                 src="https://cdn.discordapp.com/avatars/242276511028084738/66b26bbc03c85fa6659b6ae21c8ff485.png?size=4096"
                 alt="Discord Avatar"
+                style={{ borderColor: color }}
               ></img>
             </GridItem>
             <GridItem
@@ -69,36 +90,15 @@ export const MainComponent: React.FC<Props> = ({ discordStatus }) => {
           software developer; student; full-stack;
         </div>
         <div className="text-paragraph text-coloring margin-top-10 lg:w-full lg:text-start text-center flex justify-center lg:block lg:justify-start">
-          <p className="lg:w-full w-[80%]">
+          <p className="sm:w-full w-[70%]">
             hi! I'm cal! I'm a software developer and student from the united
-            kingdom. I'm mostly interested in making minecraft addons <br></br>
-            right now, but I'm also doing full-stack web development.
+            kingdom. I'm mostly interested in making minecraft addons right now,
+            but I'm also doing full-stack web development.
           </p>
         </div>
       </div>
     </div>
   );
-};
-
-export const getServerSideProps = async () => {
-  try {
-    const response = await fetch(url);
-    const data = await response.json();
-    const discordStatus = data.data.discord_status || "offline";
-
-    return {
-      props: {
-        status: discordStatus,
-      },
-    };
-  } catch (error) {
-    console.error("Error fetching Discord information", error);
-    return {
-      props: {
-        status: "offline", // Default status if there’s an error
-      },
-    };
-  }
 };
 
 // Get color based on the status

@@ -1,12 +1,11 @@
 import Link from "next/link";
-import { Card, CardHeader, CardBody, CardFooter } from "@chakra-ui/react";
-import { Text, Box, Heading, Image, SimpleGrid } from "@chakra-ui/react";
 import "../App.css";
 import Navbar from "../components/navbar";
+import { RenderIcon } from "../components/Icons";
 
 export default function Projects() {
   return (
-    <div>
+    <div className="h-full">
       <Navbar />
       <div className="items-center flex">
         <div className="items-center pt-16 pb-16 grid grid-cols-3">
@@ -21,7 +20,7 @@ export default function Projects() {
 
 function HubblyProject() {
   return (
-    <div>
+    <div className="">
       <a
         target="_blank"
         href="https://www.spigotmc.org/resources/hubbly-1-20-6-1-21-1-the-only-hub-plugin-you-will-ever-need.117243/"
@@ -40,6 +39,10 @@ function HubblyProject() {
               All in one minecraft hub software. Extremely customizable, easy to
               use, and feature rich.
             </p>
+            <div className="text-white flex items-center pt-2 space-x-4">
+              <RenderIcon name="java" size={36} link={false} />
+              <RenderIcon name="spigot" size={36} link={false} />
+            </div>
           </div>
         </div>
       </a>
@@ -64,6 +67,9 @@ function JACRProject() {
             <p className="text-gray-400 text-base text-center">
               A university assignment, working with networks, IO, and GUIs
             </p>
+            <div className="text-white flex items-center pt-2">
+              <RenderIcon name="java" size={36} link={false} />
+            </div>
           </div>
         </div>
       </a>
@@ -74,10 +80,7 @@ function JACRProject() {
 function PlaytimeChat() {
   return (
     <div>
-      <a
-        target="_blank"
-        href="https://www.spigotmc.org/resources/hubbly-1-20-6-1-21-1-the-only-hub-plugin-you-will-ever-need.117243/"
-      >
+      <a target="_blank" href="https://github.com/calrl/velocitytimechat">
         <div className="max-w-sm rounded overflow-hidden shadow-lg shadow-grey-400 my-6 mx-6 transition-transform transform scale-90 hover:scale-100 duration-200">
           <img
             className="aspect-video w-full object-cover"
@@ -92,6 +95,11 @@ function PlaytimeChat() {
               System to allow players to chat after a certain amount of time has
               passed.
             </p>
+            <div className="text-white flex items-center pt-2 space-x-4">
+              <RenderIcon name="java" size={36} link={false} />
+              <RenderIcon name="velocity" size={36} link={false} />
+              <RenderIcon name="papermc" size={24} link={false} />
+            </div>
           </div>
         </div>
       </a>

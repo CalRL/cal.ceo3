@@ -3,10 +3,21 @@ import { Card, CardHeader, CardBody, CardFooter } from "@chakra-ui/react";
 import { Text, Box, Heading, Image, SimpleGrid } from "@chakra-ui/react";
 import "../App.css";
 import Navbar from "../components/navbar";
+import { RenderIcon } from "../components/Icons";
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiCsharp,
+  SiMicrosoftazure,
+  SiTailwindcss,
+  SiChakraui,
+  SiSpigotmc,
+} from "react-icons/si";
+import { FaJava, FaPython, FaNodeJs, FaReact } from "react-icons/fa6";
 
 export default function About() {
   return (
-    <div className="">
+    <div className="h-full">
       <Navbar />
       <div>
         <Main />
@@ -18,10 +29,65 @@ export default function About() {
 function Main() {
   return (
     <div>
-      <div className="items-center flex">
-        <div className="py-8 -mx-16 text-3xl text-white">About</div>
+      <div className="mx-auto sm:max-w-4xl max-w-sm">
+        <div className="pt-8 pb-2 mt-10 text-6xl text-white">Me</div>
+        <div className="text-white text-3xl pb-16">Hi 👋, I'm cal</div>
+        <div className="text-white text-xl text-wrap space-y-8">
+          <div className="">
+            I'm a computer science student at York St John University, aspiring
+            to go to University College London for my masters degree.
+          </div>
+          <div>
+            Other than coding, I'm always focused on improving my TypeScript and
+            Java skills. I also play video games, such as minecraft, league of
+            legends and overwatch.
+          </div>
+          <div>
+            I'm currently working on several projects right now, including my
+            plugin Hubbly, and working as a developer on a project with over 800
+            users.
+          </div>
+          <div className="">
+            <div className="text-white text-5xl pt-8">Skills</div>
+            <div className="text-2xl pb-4 text-center">
+              <div className="mx-auto max-w-4xl pt-4">
+                <div>Web</div>
+                <WebGrid />
+              </div>
+              <div className="pt-4">
+                <div>Other</div>
+                <SkillsGrid />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="mx-auto max-w-4xl text-white">HELLEH</div>
+    </div>
+  );
+}
+
+function WebGrid() {
+  return (
+    <div className="grid grid-flow-col auto-cols-max justify-between mx-auto w-full max-w-lg py-6 px-6">
+      <RenderIcon name="typescript" size={36} />
+      <RenderIcon name="tailwind" size={36} />
+      <RenderIcon name="nextjs" size={36} />
+      <RenderIcon name="react" size={36} />
+      <RenderIcon name="chakra" size={36} />
+      {/*<RenderIcon name="nodejs" size={36} />*/}
+    </div>
+  );
+}
+
+function SkillsGrid() {
+  return (
+    <div className="grid grid-flow-col auto-cols-max justify-between mx-auto w-full max-w-lg py-6 px-6">
+      <RenderIcon name="csharp" size={36} />
+      <RenderIcon name="java" size={36} />
+      <RenderIcon name="spigot" size={36} />
+      <RenderIcon name="velocity" size={36} />
+      <RenderIcon name="python" size={36} />
+      <RenderIcon name="azure" size={36} />
     </div>
   );
 }

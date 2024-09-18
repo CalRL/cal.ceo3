@@ -16,11 +16,11 @@ const config: Config = {
       keyframes: {
         blur: {
           "0%": { filter: "blur(5px)" },
-          "100%": { filter: "blur(0px)" },
+          "100%": { filter: "none" },
         },
       },
       animation: {
-        blur: "blur 0.5s linear",
+        blur: "blur 1s linear",
       },
     },
   },
