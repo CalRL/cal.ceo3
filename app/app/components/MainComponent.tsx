@@ -91,9 +91,9 @@ export const MainComponent: React.FC = () => {
         </div>
         <div className="text-paragraph text-coloring margin-top-10 lg:w-full lg:text-start text-center flex justify-center lg:block lg:justify-start">
           <p className="sm:w-full w-[70%]">
-            hi! I'm cal! I'm a software developer and student from the united
-            kingdom. I'm mostly interested in making minecraft addons right now,
-            but I'm also doing full-stack web development.
+            hi! I&#39;m cal! I&#39;m a software developer and student from the
+            united kingdom. I&#39;m mostly interested in making minecraft addons
+            right now, but I&#39;m also doing full-stack web development.
           </p>
         </div>
       </div>
