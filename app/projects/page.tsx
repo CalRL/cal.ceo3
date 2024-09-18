@@ -2,6 +2,7 @@ import Link from "next/link";
 import "../App.css";
 import Navbar from "../components/navbar";
 import { RenderIcon } from "../components/Icons";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -26,7 +27,7 @@ function HubblyProject() {
         href="https://www.spigotmc.org/resources/hubbly-1-20-6-1-21-1-the-only-hub-plugin-you-will-ever-need.117243/"
       >
         <div className="max-w-sm rounded overflow-hidden shadow-lg shadow-grey-400 my-6 mx-6 transition-transform transform scale-90 hover:scale-100 duration-200">
-          <img
+          <Image
             className="aspect-video w-full object-cover"
             src="/hubbly.png"
             alt="Hubbly logo"
