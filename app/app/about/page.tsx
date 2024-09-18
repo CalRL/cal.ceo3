@@ -34,18 +34,18 @@ function Main() {
         <div className="text-white text-3xl pb-16">Hi 👋, I&#39;m cal</div>
         <div className="text-white text-xl text-wrap space-y-8">
           <div className="">
-            I'm a computer science student at York St John University, aspiring
-            to go to University College London for my masters degree.
+            I&#39;m a computer science student at York St John University,
+            aspiring to go to University College London for my masters degree.
           </div>
           <div>
-            Other than coding, I'm always focused on improving my TypeScript and
-            Java skills. I also play video games, such as minecraft, league of
-            legends and overwatch.
+            Other than coding, I&#39;m always focused on improving my TypeScript
+            and Java skills. I also play video games, such as minecraft, league
+            of legends and overwatch.
           </div>
           <div>
-            I'm currently working on several projects right now, including my
-            plugin Hubbly, and working as a developer on a project with over 800
-            users.
+            I&#39;m currently working on several projects right now, including
+            my plugin Hubbly, and working as a developer on a project with over
+            800 users.
           </div>
           <div className="">
             <div className="text-white text-5xl pt-8">Skills</div>
