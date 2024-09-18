@@ -31,7 +31,7 @@ function Main() {
     <div>
       <div className="mx-auto sm:max-w-4xl max-w-sm">
         <div className="pt-8 pb-2 mt-10 text-6xl text-white">Me</div>
-        <div className="text-white text-3xl pb-16">Hi 👋, I'm cal</div>
+        <div className="text-white text-3xl pb-16">Hi 👋, I&#39;m cal</div>
         <div className="text-white text-xl text-wrap space-y-8">
           <div className="">
             I'm a computer science student at York St John University, aspiring

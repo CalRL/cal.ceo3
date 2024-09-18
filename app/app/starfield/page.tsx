@@ -1,4 +1,4 @@
-"use client";
+/*"use client";
 import "../globals.css";
 import * as THREE from "three";
 import React, { useEffect, useRef } from "react";
@@ -75,8 +75,9 @@ export default function Starfield() {
           }
         `}
       </style>
-      {/* This div will contain the Three.js scene */}
+      { This div will contain the Three.js scene }
       <div className="starfield" ref={mountRef}></div>
     </div>
   );
 }
+*/
