@@ -40,9 +40,9 @@ function Main() {
             aspiring to go to University College London for my masters degree.
           </div>
           <div>
-            Other than coding, I&#39;m always focused on improving my TypeScript
-            and Java skills. I also play video games, such as minecraft, league
-            of legends and overwatch.
+            Other than university, I&#39;m always focused on improving my
+            TypeScript and Java skills. I also play video games, such as
+            minecraft, league of legends and overwatch.
           </div>
           <div>
             I&#39;m currently working on several projects right now, including
