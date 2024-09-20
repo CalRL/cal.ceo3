@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { Card, CardHeader, CardBody, CardFooter } from "@chakra-ui/react";
 import { Text, Box, Heading, Image, SimpleGrid } from "@chakra-ui/react";
