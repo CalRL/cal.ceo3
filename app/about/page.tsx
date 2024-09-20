@@ -17,7 +17,7 @@ import { FaJava, FaPython, FaNodeJs, FaReact } from "react-icons/fa6";
 
 export default function About() {
   return (
-    <div className="h-full">
+    <div className="h-full xl:overflow-hidden">
       <Navbar />
       <div>
         <Main />
