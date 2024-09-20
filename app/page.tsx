@@ -18,7 +18,7 @@ export default async function Home() {
   return (
     <div className="h-full">
       <Navbar />
-      <main className="flex mt-[20vh] flex-col items-center justify-between">
+      <main className="flex 2xl:mt-[20vh] mt-[4vh] flex-col items-center justify-between">
         {/* Pass discordStatus to MainComponent */}
         <MainComponent />
       </main>

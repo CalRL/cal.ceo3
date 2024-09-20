@@ -60,7 +60,7 @@ export const MainComponent: React.FC = () => {
             </GridItem>
             <GridItem
               area={"name"}
-              className="text-5x1 lg:mt-[15%]"
+              className="text-5x1 mt-[15%]"
               fontWeight="bold"
             >
               Cal
@@ -68,7 +68,7 @@ export const MainComponent: React.FC = () => {
             <GridItem
               area={"pronouns"}
               className="text-2x1 pronouns-text"
-              marginTop="20%"
+              marginTop="25%"
               marginLeft="-10%"
               fontWeight={700}
             >

@@ -31,6 +31,8 @@ function HubblyProject() {
             className="aspect-video w-full object-cover"
             src="/hubbly.png"
             alt="Hubbly logo"
+            width={512}
+            height={512}
           />
           <div className="px-6 py-4">
             <div className="text-white font-bold text-xl mb-2 text-center">
