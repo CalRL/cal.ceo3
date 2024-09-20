@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  background-color: #282c34;
+body {
+  background: #282c34;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
 }
 
 :root {

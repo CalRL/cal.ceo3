@@ -29,12 +29,10 @@ export default function About() {
 function Main() {
   return (
     <div>
-      <div className="mx-auto xl:max-w-4xl max-w-[480px]">
+      <div className="mx-auto lg:max-w-4xl max-w-sm">
         <div className="pt-8 pb-2 mt-10 text-6xl text-white">Me</div>
-        <div className="text-white pb-8 text-xl 2xl:text-3xl ">
-          Hi 👋, I&#39;m cal
-        </div>
-        <div className="text-white text-wrap space-y-2 text-sm 2xl:space-y-8 2xl:text-xl ">
+        <div className="text-white pb-16 text-3xl">Hi 👋, I&#39;m cal</div>
+        <div className="text-white text-wrap text-xl space-y-8 2xl:text-xl">
           <div className="">
             I&#39;m a computer science student at York St John University,
             aspiring to go to University College London for my masters degree.
@@ -50,8 +48,8 @@ function Main() {
             800 users.
           </div>
           <div className="">
-            <div className="text-white text-2xl 2xl:text-5xl pt-8">Skills</div>
-            <div className="2xl:text-2xl text-lg 2xl:pb-4 text-center 2xl:scale-100 scale-75">
+            <div className="text-white text-5xl 2xl:text-5xl pt-8">Skills</div>
+            <div className="2xl:text-2xl text-lg 2xl:pb-4 text-center lg:scale-100 scale-75">
               <div className="mx-auto max-w-4xl 2xl:pt-4">
                 <div>Web</div>
                 <WebGrid />
