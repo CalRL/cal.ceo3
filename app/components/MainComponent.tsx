@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import "../App.css";
+import "@/app/App.css";
 import { Grid, GridItem } from "@chakra-ui/react";
 import { FaCircle } from "react-icons/fa";
 import { json } from "stream/consumers";
@@ -31,9 +31,9 @@ export const MainComponent: React.FC = () => {
 
   const color = getColor(discordStatus);
   return (
-    <div className="main flex-nowrap mx-auto max-w-sm sm:max-w-2xl lg:max-w-4xl">
-      <div className="mt-[5%] h-full">
-        <div className="">
+    <div className="main flex-nowrap mx-auto max-w-sm md:max-w-2xl lg:max-w-4xl">
+      <div className="mt-[5%] h-full ">
+        <div className="flex justify-center md:justify-start">
           <Grid
             templateAreas={`"avatar name pronouns"
                                 "avatar status status"`}

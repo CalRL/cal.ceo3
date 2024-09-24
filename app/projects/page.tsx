@@ -3,18 +3,20 @@ import "../App.css";
 import Navbar from "../components/navbar";
 import { RenderIcon } from "../components/Icons";
 import Image from "next/image";
+import MiniProjects from "./MiniProjects";
 
 export default function Projects() {
   return (
     <div className="h-full">
       <Navbar />
       <div className="items-center flex">
-        <div className="items-center pt-16 pb-16 grid grid-cols-3">
+        <div className="items-center pt-16 pb-16 grid xl:grid-cols-3 grid-cols-1">
           <HubblyProject />
           <JACRProject />
           <PlaytimeChat />
         </div>
       </div>
+      <MiniProjects />
     </div>
   );
 }

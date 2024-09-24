@@ -8,13 +8,8 @@ import {
   SiSpigotmc,
 } from "react-icons/si";
 
-import {
-  FaJava,
-  FaPython,
-  FaNodeJs,
-  FaReact,
-  FaPaperPlane,
-} from "react-icons/fa6";
+import { FaJava, FaPython, FaNodeJs, FaReact } from "react-icons/fa6";
+
 import React from "react";
 
 // Define the possible icon names as a TypeScript type
@@ -32,7 +27,6 @@ type IconName =
   | "papermc"
   | "velocity"
   | "python";
-
 // Main Icons function that logs a message
 export default function Icons(): void {
   console.log("You're not meant to be using this function...");
