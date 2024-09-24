@@ -4,6 +4,8 @@ import "@/app/App.css";
 import { Grid, GridItem } from "@chakra-ui/react";
 import { FaCircle } from "react-icons/fa";
 import { json } from "stream/consumers";
+import Image from "next/image";
+
 const url = "https://api.lanyard.rest/v1/users/242276511028084738";
 
 export const MainComponent: React.FC = () => {
@@ -56,7 +58,7 @@ export const MainComponent: React.FC = () => {
                 src="https://cdn.discordapp.com/avatars/242276511028084738/66b26bbc03c85fa6659b6ae21c8ff485.png?size=4096"
                 alt="Discord Avatar"
                 style={{ borderColor: color }}
-              ></img>
+              />
             </GridItem>
             <GridItem
               area={"name"}

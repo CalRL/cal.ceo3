@@ -65,8 +65,8 @@ function InfiniteFireworkProject() {
               InfiniteFirework
             </div>
             <p className="text-gray-400 text-base text-center">
-              This plug-in adds a rocket that doesn't get consumed when used if
-              the player is flying with an elytra.
+              This plug-in adds a rocket that doesn&apos;t get consumed when
+              used if the player is flying with an elytra.
             </p>
             <div className="text-white flex items-center pt-2 space-x-4">
               <RenderIcon name="java" size={36} link={false} />

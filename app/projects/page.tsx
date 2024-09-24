@@ -60,10 +60,12 @@ function JACRProject() {
     <div>
       <a target="_blank" href="https://github.com/CalRL/JustAnotherChatRoom">
         <div className="max-w-sm rounded overflow-hidden shadow-lg shadow-grey-400 my-6 mx-6 transition-transform transform scale-90 hover:scale-100 duration-200">
-          <img
+          <Image
             className="aspect-video w-full object-cover"
             src="/github.jpg"
             alt="Github logo"
+            width={512}
+            height={512}
           />
           <div className="px-6 py-4">
             <div className="text-white font-bold text-xl mb-2 text-center">
@@ -87,10 +89,12 @@ function PlaytimeChat() {
     <div>
       <a target="_blank" href="https://github.com/calrl/velocitytimechat">
         <div className="max-w-sm rounded overflow-hidden shadow-lg shadow-grey-400 my-6 mx-6 transition-transform transform scale-90 hover:scale-100 duration-200">
-          <img
+          <Image
             className="aspect-video w-full object-cover"
             src="/velocity.png"
             alt="Velocity logo"
+            width={512}
+            height={512}
           />
           <div className="px-4 py-4">
             <div className="text-white font-bold text-xl mb-2 text-center text-nowrap">
